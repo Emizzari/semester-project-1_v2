@@ -1,0 +1,54 @@
+/* COLOUR PALETTE:
+#000000;  -  BLACK
+#0E0E0C;  -  DARK GREY
+#FF003D;  -  RED/PINK
+#FFFFFF;  -  WHITE
+------------------------------------------------------*/
+
+
+/* GLOBAL STYLES
+------------------------------------------------------*/
+#events{
+  margin: 1em;
+}
+
+.events-grid-container{
+  display: grid;
+  grid-gap: 1em;
+}
+
+/* MOBILE
+------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  #events{
+    margin: 0em;
+  }
+
+  .events-grid-container{
+    grid-template-columns: 1;
+  }
+}
+
+/* TABLET
+------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width:1024px){
+  .events-grid-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* LAPTOP
+------------------------------------------------------*/
+@media only screen and (min-width: 1025px) and (max-width:1600px){
+  .events-grid-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* DESKTOP
+------------------------------------------------------*/
+@media only screen and (min-width: 1601px){
+  .events-grid-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,240 @@
+/* IMPORTS
+------------------------------------------------------*/
+/* ESSENTIALS */
+@import url("nav.css");
+@import url("footer.css");
+
+/* PAGES */
+@import url("home.css");
+@import url("events.css");
+@import url("exhibitions.css");
+@import url("visit.css");
+@import url("involved.css");
+@import url("about.css");
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Jura|Montserrat&display=swap');
+
+/* COLOUR PALETTE:
+#000000;  -  BLACK
+#0E0E0C;  -  DARK GREY
+#2D2D3C;  -  GREY
+#FF003D;  -  RED/PINK
+#FFFFFF;  -  WHITE
+------------------------------------------------------*/
+
+/* GLOBAL STYLES
+------------------------------------------------------*/
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: 'Julius Sans One', sans-serif;
+  margin: 0;
+  padding: 35px 10px;
+  color: #fff;
+}
+
+h2{
+  font-family: 'Jura', sans-serif;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+h3{
+  margin: 5px 0 0px 0;
+}
+
+p{
+  margin: 0;
+  padding: 8px 0 10px 0;
+}
+
+img{
+  display: block;
+}
+
+main img{
+  width: 100%;
+}
+
+main a{
+  text-decoration: none;
+  color: #FF003D;
+  border-bottom: 1.5px solid #FF003D;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  padding: 8px 0 2px 0;
+}
+
+main a:hover{
+  border-bottom: 0px solid #FFF;
+}
+
+.last-p{
+  padding-bottom: 0;
+}
+
+.bolder{
+  font-weight: 900;
+}
+
+.dark-background{
+  background-color: #0E0E0C;
+}
+
+.grey-background{
+  background-color: #2D2D3C;
+}
+
+.red-background{
+  background-color: #FF003D;
+}
+
+.mobile-images{
+  width: 100%;
+}
+
+.tablet-images{
+  width: 100%;
+}
+
+.laptop-images{
+  width: 100%;
+}
+
+.desktop-images{
+  width: 100%;
+}
+
+/* MOBILE
+------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  h1{
+    font-size: 40px;
+  }
+
+  h2{
+    font-size: 30px;
+    padding: 12px 10px;
+  }
+
+  h3{
+    margin: 5px 0px 5px 10px;
+  }
+
+  p{
+    font-size: 17px;
+    padding: 0px 10px 15px 10px;
+  }
+
+  main a{
+    font-size: 17px;
+    margin: 0 10px 15px 10px;
+  }
+
+  .tablet-images{
+    display: none;
+  }
+
+  .laptop-images{
+    display: none;
+  }
+
+  .desktop-images{
+    display: none;
+  }
+}
+
+/* TABLET
+------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width:1024px){
+  h1{
+    font-size: 38px;
+    text-align: center;
+    padding: 28px 10px;
+  }
+
+  h2{
+    font-size: 32px;
+  }
+
+  p, main a{
+    font-size: 16px;
+  }
+
+  .mobile-images{
+    display: none;
+  }
+
+  .laptop-images{
+    display: none;
+  }
+
+  .desktop-images{
+    display: none;
+  }
+}
+
+/* LAPTOP
+------------------------------------------------------*/
+@media only screen and (min-width: 1025px) and (max-width:1600px){
+  h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 10px;
+  }
+
+  h2{
+    font-size: 35px;
+  }
+
+  p, main a{
+    font-size: 17px;
+  }
+
+  .mobile-images{
+    display: none;
+  }
+
+  .tablet-images{
+    display: none;
+  }
+
+  .desktop-images{
+    display: none;
+  }
+}
+
+/* DESKTOP
+------------------------------------------------------*/
+@media only screen and (min-width: 1601px){
+  h1{
+    font-size: 45px;
+    text-align: center;
+    padding: 35px 10px;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
+  p, main a{
+    font-size: 17px;
+  }
+
+  .mobile-images{
+    display: none;
+  }
+
+  .tablet-images{
+    display: none;
+  }
+
+  .laptop-images{
+    display: none;
+  }
+}

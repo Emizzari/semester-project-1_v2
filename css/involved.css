@@ -1,0 +1,60 @@
+/* COLOUR PALETTE:
+#000000;  -  BLACK
+#0E0E0C;  -  DARK GREY
+#FF003D;  -  RED/PINK
+#FFFFFF;  -  WHITE
+------------------------------------------------------*/
+
+
+/* GLOBAL STYLES
+------------------------------------------------------*/
+#involved{
+  margin: 1em;
+}
+
+.involved-grid-container{
+  display: grid;
+  grid-gap: 1em;
+}
+
+#donate{
+  margin: 0;
+  padding-left: 0;
+}
+
+
+/* MOBILE
+------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  #involved{
+    margin: 0;
+  }
+
+  .involved-grid-container{
+    grid-template-columns: 1;
+  }
+}
+
+/* TABLET
+------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width:1024px){
+  .involved-grid-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* LAPTOP
+------------------------------------------------------*/
+@media only screen and (min-width: 1025px) and (max-width:1600px){
+  .involved-grid-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* DESKTOP
+------------------------------------------------------*/
+@media only screen and (min-width: 1601px){
+  .involved-grid-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
