@@ -1,0 +1,439 @@
+/* MAIN: --------------------------------------*/
+.main--grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  position: relative;
+  box-sizing: border-box;
+}
+/* END OF MAIN ------------------------------- */
+
+
+
+/* SECTION: ---------------------------------- */
+.main__section{
+  background-color: #fff;
+  box-shadow: 0px 0px 20px #00000020;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main__section--padding{
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main__section--cafe-img{
+    background: url("../images/pages/visit/cafe.jpg");  
+}
+
+.main__section--jar-img{
+    background: url("../images/pages/about/laptop-about.jpg");  
+}
+
+.main__section--heart-img{
+  background: url("../images/pages/involved/mobile-involved.jpg");
+}
+/* END OF SECTION ---------------------------- */
+
+ 
+
+/* SECTION HEADLINES: ------------------------ */
+.main__section__h2{
+    text-transform: uppercase;
+}
+
+.main__section__h3{
+    text-transform: uppercase;
+}
+
+.main__section__p{
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main__section__link{
+  text-decoration: underline;
+  color: #FF003D;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 8px 0 20px 0;
+  box-sizing: border-box;
+}
+
+.main__section__link:hover{
+  text-decoration: none;
+}
+
+.main__section__p__link{
+  text-decoration: underline;
+  color: #FF003D;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 8px 0 20px 0;
+  box-sizing: border-box;
+}
+
+.main__section__p__link:hover{
+  text-decoration: none;
+}
+
+/* END OF SECTION HEADLINES ------------------ */
+
+
+
+/* SECTION BLOCKS: --------------------------- */
+.main__section__block--opening-hours{
+  width: 100%;
+  border-top: 1px solid #000;
+  padding: 10px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.main__section__block--opening-hours:last-child{
+  border-bottom: 1px solid #000;
+}
+
+.main__section__block__span--weekdays{
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: start;
+  padding: 5px;
+}
+
+.main__section__block__span--time{
+  float: right;
+}
+/* END OF SECTION BLOCKS --------------------- */
+
+
+
+
+.iframe--map{
+  display: block;
+}
+
+
+/* MOBILE
+------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  .main--grid{
+    margin: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  }
+
+  .main__section{
+    margin-bottom: 50px;
+  }
+
+  .main__section:last-child{
+    margin-bottom: 0px;
+  }
+
+  .main__section--padding{
+      padding: 15px
+  }
+
+  .main__section--elephant-img{
+    background: url("../images/pages/events/mobile-elephant.jpg");
+    height: 500px;
+    background-position: 50% 40%;
+  }
+
+  .main__section--dinosaur-img{
+    background: url("../images/pages/exhibitions/exhibitions.jpg");
+    background-position: 50% 0%;
+  }
+
+  .main__section__h2{
+      padding-bottom: 20px;
+  }
+
+  .main__section__h3{
+    padding-bottom: 10px;
+    margin: 0;
+  }
+
+   .main__section__p{
+      padding-bottom: 20px;
+  }
+
+  .main__section__p:last-child{
+      padding-bottom: 0px;
+  }
+
+    .iframe--map{
+        width: 100%;
+        height: 300px;
+  }
+}
+
+/* TABLET
+------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width:1097px){
+  .main--grid{
+    margin: 2.5em;
+    grid-gap: 2.5em;
+  }
+  
+  .main__section--elephant-img{
+    background: url("../images/pages/events/tablet-elephant.jpg");
+    background-position: 50% 50%;
+  }
+
+  .main__section--dinosaur-img{
+    background: url("../images/pages/exhibitions/exhibitions.jpg");
+    background-position: 50% 0%;
+  }
+
+  .main__section__h2{
+    padding-bottom: 20px;
+  }
+
+  .main__section__h3{
+    padding-bottom: 10px;
+    margin: 0;
+  }
+
+  .main__section__p{
+    padding-bottom: 20px;
+  }
+
+  .main__section__p:last-child{
+      padding-bottom: 0px;
+  }
+
+  .main--grid--visit-page{
+      grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  }
+
+  .iframe--map{
+    width: 100%;
+    height: 300px;
+  }
+
+  .main__section--jar-img{
+      background: url("../images/pages/about/desktop-about.jpg");
+      background-position: 40% 50%;
+  
+  }
+}
+
+/* LAPTOP
+------------------------------------------------------*/
+@media only screen and (min-width: 1098px) and (max-width:1600px){
+  .main--grid{
+    margin: 2.5em;
+    grid-gap: 2.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .main__section--elephant-img{
+    display: none;
+  }
+
+  .main__section__h2{
+    padding-bottom: 20px;
+  }
+
+  .main__section__h3{
+    padding-bottom: 10px;
+    margin: 0;
+  }
+
+  .main__section__p{
+    padding-bottom: 20px;
+  }
+
+  .main__section__p:last-child{
+      padding-bottom: 0px;
+  }
+
+  .main__section--dinosaur-img{
+    background: url("../images/pages/exhibitions/exhibitions.jpg");
+    background-position: 50% 0%;
+  }
+
+  .iframe--map{
+    width: 100%;
+    height: 300px;
+  }
+
+
+  /* Grid Area */
+.main__section--opening-hours{
+  grid-area: opening-hours;
+}
+
+.main__section--tickets{
+    grid-area: tickets;
+}
+
+.main__section--contact{
+    grid-area: contact;
+}
+
+.main__section--location{
+    grid-area: location;
+}
+
+.main__section--food{
+    grid-area: food;
+}
+
+.main__section--shop{
+    grid-area: shop;
+}
+
+.main__section--accessibility{
+    grid-area: accessibility;
+}
+
+.main__section--illustration{
+    grid-area: illustration;
+    display: none;
+}
+
+.main--grid--visit-page{
+    grid-template-areas: 
+        'opening-hours tickets contact'
+        'opening-hours tickets location'
+        'food shop accessibility'
+    ;
+}
+
+ 
+
+  .main__section--jar-img{
+      
+      background: url("../images/pages/about/desktop-about.jpg");
+      background-position: 40% 50%;
+  }
+
+  
+}
+
+/* DESKTOP
+------------------------------------------------------*/
+@media only screen and (min-width: 1601px){
+  .main--grid{
+    margin: 3rem;
+    grid-gap: 3em;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+  }
+
+  .main__section{
+    box-shadow: 0px 0px 20px #00000020;
+    background: #fff;
+  }
+  
+  .main__section--elephant-img{
+    display: none;
+  }
+
+  .main__section--dinosaur-img{
+    background: url("../images/pages/exhibitions/exhibitions.jpg");
+    background-position: 50% 0%;
+  }
+
+  
+
+  .main__section__h2{
+    padding-bottom: 20px;
+  }
+
+   .main__section__h3{
+    padding-bottom: 10px;
+    margin: 0;
+  }
+
+  .main__section__p{
+    padding-bottom: 20px;
+  }
+
+  .main__section__p:last-child{
+      padding-bottom: 0px;
+  }
+
+
+
+/* Grid Area */
+.main__section--opening-hours{
+  grid-area: opening-hours;
+}
+
+.main__section--tickets{
+    grid-area: tickets;
+}
+
+.main__section--contact{
+    grid-area: contact;
+}
+
+.main__section--location{
+    grid-area: location;
+}
+
+.main__section--food{
+    grid-area: food;
+}
+
+.main__section--shop{
+    grid-area: shop;
+}
+
+.main__section--accessibility{
+    grid-area: accessibility;
+}
+
+.main__section--illustration{
+    grid-area: illustration;
+    display: none;
+}
+
+.main--grid--visit-page{
+    grid-template-areas: 
+        'opening-hours tickets contact'
+        'opening-hours tickets location'
+        'food shop accessibility'
+    ;
+}
+
+
+
+.iframe--map{
+    width: 100%;
+    height: 350px;
+  }
+
+
+
+
+
+
+  .main__section--jar-img{
+     
+      background: url("../images/pages/about/desktop-about.jpg");
+      background-position: 40% 50%;
+  }
+ 
+  
+
+}
+
+
+
+
+
+
+.main__section--background-img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
