@@ -5,6 +5,11 @@
 #FFFFFF;  -  WHITE
 ------------------------------------------------------*/
 
+
+
+
+
+
 /* GLOBAL STYLES
 ------------------------------------------------------*/
 #desktop-header{
@@ -27,7 +32,7 @@
 .home-grid-container div > a{
   color: #000;
   text-decoration: none;
-  border-bottom: 1px solid #000;
+  /* border-bottom: 1px solid #000; */
 }
 
 .home-grid-container div > a:hover{
@@ -45,7 +50,7 @@
 }
 
 .call-to-action{
-  background-image: linear-gradient(to right, #FF003C , #5E0016);
+  background: #FF003C;
 }
 
 .description{
