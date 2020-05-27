@@ -2,9 +2,10 @@
 .nav{
   background-color: #000;
   box-sizing: border-box;
-  position: sticky;
+  position: fixed;
   position:-webkit-sticky;
   top: 0;
+  width: 100%;
   text-align: right;
   height: 100px;
   line-height: 100px;
@@ -118,7 +119,6 @@
     top: 100px;
     background-color: rgba(0, 0, 0, 0.9) !important;
     transition: 1s;
-    z-index: 1999999999999;
   }
   
   .nav__block--menu a{
