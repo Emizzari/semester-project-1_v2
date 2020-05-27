@@ -1,103 +1,102 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!-- Technical: -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <!-- Technical: -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS: -->
-    <link rel="stylesheet" href="css/master.css">
+  <!-- CSS: -->
+  <link rel="stylesheet" href="css/master.css">
 
-    <!-- SEO: -->
-    <meta name="author" content="Emilie H. K. Tonnessen">
-    <meta name="description" content="
-      Come join us at the Community Science Museum where we’re committed
-      to making science accessible to all.">
-    <meta name="keywords" content="
-      community science museum explore kids kid children family learn teach
-      fun exciting">
+  <!-- SEO: -->
+  <meta name="author" content="Emilie H. K. Tonnessen">
+  <meta name="description" content="Come join us at the Community Science Museum where we’re committed to making science accessible to all.">
+  <meta name="keywords" content="community science museum explore kids kid children family learn teach fun exciting">
 
-      <!-- Page title: -->
-    <title>Community Science Museum</title>
-  </head>
-  <body>
-<!-- NAVIGATION: ------------------------------------------------------------------------->
-    <nav class="navigation">
-      <div id="logo"><a href="index.html"><img src="images/logo/logo.png" alt="Logo"></a></div>
-      <label for="toggle">&#9776;</label>
-      <input type="checkbox" id="toggle"/>
-      <div class="menu">
-        <a id="active" href="index.html">HOME</a>
-        <a href="events.html">EVENTS</a>
-        <a href="exhibitions.html">EXHIBITONS</a>
-        <a href="visit.html">VISIT</a>
-        <a href="involved.html">GET INVOLVED</a>
-        <a href="about.html">ABOUT US</a>
-      </div>
-    </nav>
-<!-- HEADER: ----------------------------------------------------------------------------->
-    <header class="header header--home">
-      <div class="header__block">
-        <h1 class="header__block__h1">community science museum</h1>
-      </div>
-    </header>
-<!-- MAIN CONTENT: ----------------------------------------------------------------------->
-    
-<!-- SECTION: CALL TO ACTION -->
-    <section class="section--cta"> 
+  <!-- Page title: -->
+  <title>Community Science Museum</title>
 
-        <div class="section__block--cta">
-          <h2>OPEN 6 DAYS A WEEK</h2>
-          <a href="visit.html"><button class="button">
-              plan a visit
-          </button></a>
-        </div>
+</head>
+<body>
+  <!-- NAVIGATION: ------------------------------------------------------------------------->
+  <nav class="nav">
+    <a class="nav__img--logo" href="index.html"><img src="images/logo/logo.png" alt="Logo"></a>
+    <div class="nav__block--hamburger-icon" onclick="mobileMenuToggle()">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+    </div>
+    <div class="nav__block--menu">
+      <a id="active" href="index.html">HOME</a
+      ><a href="events.html">EVENTS</a
+      ><a href="exhibitions.html">EXHIBITONS</a
+      ><a href="visit.html">VISIT</a
+      ><a href="involved.html">GET INVOLVED</a
+      ><a href="about.html">ABOUT US</a>
+    </div>
+  </nav>
+  <!---------------------------------------------------------------------------------------->
 
-        <div class="section__block--cta">
-          <h2>EXCITING EVENTS</h2>
-          <a href="visit.html"><button class="button">
-              check out
-            </button></a>
-        </div>
 
-        <div class="section__block--cta">
-          <h2>EXTRAORDINARY EXHIBITIONS</h2>
-          <a href="visit.html"><button class="button">
-              learn more
-            </button></a>
-        </div>
+  <!-- HEADER: ----------------------------------------------------------------------------->
+  <header class="header header--home">
+    <div class="header__block">
+      <h1 class="header__block__h1">community science museum</h1>
+    </div>
+  </header>
+  <!---------------------------------------------------------------------------------------->
 
-        <div class="section__block--cta">
-          <h2>FREE ENTRY - SUPPORT US</h2>
-          <a href="visit.html"><button class="button">
-              support us
-            </button></a>
-        </div>
-      
-        <img class="section__img--cta" src="images/pages/home/test4.png" alt="">
-      
-    </section>
 
-    <!-- SECTION: TEXT CONTENT/DESCRIPTION -->
-    <div class="dark-background">
-      <div class="description">
-        <h2 id="sub-headline">Explore Together</h2>
-        <p>
+  <!-- MAIN CONTENT: ------------------------------------------------------------------------->
+  <!-- CTA: -->
+  <section class="section--cta"> 
+    <div class="section__block--cta">
+      <h2>OPEN 6 DAYS A WEEK</h2>
+      <a href="visit.html"><button class="button">
+          plan a visit
+      </button></a>
+    </div>
+    <div class="section__block--cta">
+      <h2>EXCITING EVENTS</h2>
+      <a href="visit.html"><button class="button">
+        check out
+      </button></a>
+    </div>
+    <div class="section__block--cta">
+      <h2>EXTRAORDINARY EXHIBITIONS</h2>
+      <a href="visit.html"><button class="button">
+          learn more
+      </button></a>
+    </div>
+    <div class="section__block--cta">
+      <h2>FREE ENTRY - SUPPORT US</h2>
+      <a href="visit.html"><button class="button">
+        support us
+      </button></a>
+    </div>
+    <img class="section__img--cta" src="images/pages/home/test4.png" alt="">
+  </section>
+
+  <!-- Text Content -->
+  <section class="section--dark-background">
+      <div class="section__block--description">
+        <h2 class="section__block__h2">Explore Together</h2>
+        <p class="main__section__p">
           Come join us at the Community Science Museum where we’re committed
           to making science accessible to all.
         </p>
-        <p>
+        <p class="main__section__p">
           Over the course of human history, science has developed from our
           early understanding of fire, wind, water, and earth to exploring
           everything from galaxies far away to the very building blocks of
           life itself.
         </p>
-        <p>
+        <p class="main__section__p">
           The aim of our museum is to create a space where everyone can
           experience the wonders of our discoveries and perhaps even ignite
           a lifelong passion to continue the exploration of the world around us.
         </p>
-        <p>
+        <p class="main__section__p">
           We believe science should not be confined to the textbook, but
           brought to live through exhibits. This is why we have over 1000
           different exhibits on the many varied subjects of science to explore.
@@ -106,13 +105,16 @@
           exhibits – they only come to life at night when everyone’s gone home).
         </p>
       </div>
-    </div>
-    <!-- SECTION: END IMAGE -->
-    <img class="mobile-images" src="images/pages/home/mobile-home.jpg" alt="Girl with VR glasses">
-    <img class="tablet-images" src="images/pages/home/desktop-home.jpg" alt="Girl with VR glasses">
-    <img class="laptop-images" src="images/pages/home/desktop-home.jpg" alt="Girl with VR glasses">
-    <img class="desktop-images" src="images/pages/home/desktop-home.jpg" alt="Girl with VR glasses">
-<!-- FOOTER: ----------------------------------------------------------------------------->
+  </section>
+
+  <!-- SECTION: END IMAGE -->
+  <img class="mobile-images" src="images/pages/home/mobile-home.jpg" alt="Girl with VR glasses">
+  <img class="tablet-images" src="images/pages/home/desktop-home.jpg" alt="Girl with VR glasses">
+  <img class="laptop-images" src="images/pages/home/desktop-home.jpg" alt="Girl with VR glasses">
+  <img class="desktop-images" src="images/pages/home/desktop-home.jpg" alt="Girl with VR glasses">
+  <!---------------------------------------------------------------------------------------->
+
+  <!-- FOOTER: ----------------------------------------------------------------------------->
     <footer>
       <div class="footer-grid-container-socialmedia">
         <div class="social-media">
@@ -169,9 +171,12 @@
         </div>
       </div>
       <div class="footer-grid4">
-        <p>&copy; 2019 Community Science Museum - All rights reserved</p>
+        <p>&copy; 2020 Community Science Museum - All rights reserved</p>
       </div>
-    </footer>
+  </footer>
+  <!---------------------------------------------------------------------------------------->
+
+    <script src="js/mobile-menu.js"></script>
 <!-- END: --------------------------------------------------------------------------------->
   </body>
 </html>

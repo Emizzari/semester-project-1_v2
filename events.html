@@ -1,86 +1,96 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/master.css">
-    <meta name="author" content="Emilie H. K. Tonnessen">
-    <meta name="description" content="
-      Get your family, friends or school mates together for our exciting events
-      that are made with passion and excitement for all the wonders we want to
-      share with you and all your loved ones.">
-    <meta name="keywords" content="
-      event events kids family school students learn teach explore fun amazing">
-    <title>CSM | Events</title>
-  </head>
-  <body>
-<!-- NAVIGATION: ------------------------------------------------------------------------->
-    <nav class="navigation">
-      <div id="logo"><a href="index.html"><img src="images/logo/logo.png" alt="Logo"></a></div>
-      <label for="toggle">&#9776;</label>
-      <input type="checkbox" id="toggle"/>
-      <div class="menu">
-        <a href="index.html">HOME</a>
-        <a id="active" href="events.html">EVENTS</a>
-        <a href="exhibitions.html">EXHIBITONS</a>
-        <a href="visit.html">VISIT</a>
-        <a href="involved.html">GET INVOLVED</a>
-        <a href="about.html">ABOUT US</a>
+<head>
+  <!-- Technical: -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS: -->
+  <link rel="stylesheet" href="css/master.css">
+
+  <!-- SEO: -->
+  <meta name="author" content="Emilie H. K. Tonnessen">
+  <meta name="description" content="Get your family, friends or school mates together for our exciting events that are made with passion and excitement for all the wonders we want to share with you and all your loved ones.">
+  <meta name="keywords" content="event events kids family school students learn teach explore fun amazing">
+
+  <!-- Page title: -->
+  <title>CSM | Events</title>
+</head>
+
+<body>
+  <!-- NAVIGATION: ------------------------------------------------------------------------->
+  <nav class="nav">
+    <a class="nav__img--logo" href="index.html"><img src="images/logo/logo.png" alt="Logo"></a>
+    <div class="nav__block--hamburger-icon" onclick="mobileMenuToggle()">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+    </div>
+    <div class="nav__block--menu">
+      <a href="index.html">HOME</a
+      ><a id="active" href="events.html">EVENTS</a
+      ><a href="exhibitions.html">EXHIBITONS</a
+      ><a href="visit.html">VISIT</a
+      ><a href="involved.html">GET INVOLVED</a
+      ><a href="about.html">ABOUT US</a>
+    </div>
+  </nav>
+  <!---------------------------------------------------------------------------------------->
+
+  <!-- HEADER: ----------------------------------------------------------------------------->
+  <header class="grey-background">
+    <h1>Events</h1>
+  </header>
+  <!---------------------------------------------------------------------------------------->
+
+  <!-- MAIN: ------------------------------------------------------------------------------->
+  <main class="main main--grid">
+
+    <section class="main__section">
+      <img src="images/pages/events/night.jpg" alt="Skeleton of a Mammoth">
+      <div class="main__section--padding">
+        <h2 class="main__section__h2">Night in the Museum</h2>
+        <p class="main__section__p">
+          Get your family together for an exciting night in the museum as you sleep
+          over beside dinosaurs and science displays. Bring your own sleeping bag
+          and get ready to rough it as we go exploring the wonders of science.
+        </p>
       </div>
-    </nav>
-<!-- HEADER: ----------------------------------------------------------------------------->
-    <header class="grey-background">
-      <h1>Events</h1>
-    </header>
-<!-- MAIN: ------------------------------------------------------------------------------->
-    <main class="main main--grid">
-      <!-- SECTION: EVENTS CONTENT -->
-      
-        <section class="main__section">
-          <img src="images/pages/events/night.jpg" alt="Skeleton of a Mammoth">
-          <div class="main__section--padding">
-            <h2 class="main__section__h2">Night in the Museum</h2>
-            <p class="main__section__p">
-              Get your family together for an exciting night in the museum as you sleep
-              over beside dinosaurs and science displays. Bring your own sleeping bag
-              and get ready to rough it as we go exploring the wonders of science.
-            </p>
-          </div>
-        </section>
+    </section>
 
-        <section class="main__section">
-          <img src="images/pages/events/energy.jpg" alt="Female professor opperating a machine">
-          <div class="main__section--padding">
-            <h2 class="main__section__h2">Energetica Exhibition on Loan</h2>
-            <p class="main__section__p">
-              On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition
-              is coming to the Community Science Museum. It’s a series of installations
-              that allow visitors to experience the power of the elements as we harness
-              them. From solar energy powering lighting, to ‘Wind Island’ that shows how
-              turbines are able to use and control wind to create power.
-            </p>
-          </div>
-        </section>
+    <section class="main__section">
+      <img src="images/pages/events/energy.jpg" alt="Female professor opperating a machine">
+      <div class="main__section--padding">
+        <h2 class="main__section__h2">Energetica Exhibition on Loan</h2>
+        <p class="main__section__p">
+          On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition
+          is coming to the Community Science Museum. It’s a series of installations
+          that allow visitors to experience the power of the elements as we harness
+          them. From solar energy powering lighting, to ‘Wind Island’ that shows how
+          turbines are able to use and control wind to create power.
+        </p>
+      </div>
+    </section>
 
-        <section class="main__section">
-          <img src="images/pages/events/professor.jpg" alt="Professor Sheila Widnall">
-          <div class="main__section--padding">
-            <h2 class="main__section__h2">Visiting Professor of Aeronautics</h2>
-            <p class="main__section__p">
-              It is our pleasure to announce that Prof Sheila Widnall from the
-              Massachusetts Institute of Technology will be delivering 3 lectures on
-              the development of aeronautics and where the future lies in this exciting
-              ‘space’.
-            </p>
-          </div>
-        </section>
+    <section class="main__section">
+      <img src="images/pages/events/professor.jpg" alt="Professor Sheila Widnall">
+      <div class="main__section--padding">
+        <h2 class="main__section__h2">Visiting Professor of Aeronautics</h2>
+        <p class="main__section__p">
+          It is our pleasure to announce that Prof Sheila Widnall from the
+          Massachusetts Institute of Technology will be delivering 3 lectures on
+          the development of aeronautics and where the future lies in this exciting
+          ‘space’.
+        </p>
+      </div>
+    </section>
 
-        <section class="main__section main__section--background-img main__section--elephant-img"></section>
+    <section class="main__section main__section--background-img main__section--elephant-img"></section>
+  </main>
+  <!---------------------------------------------------------------------------------------->
 
-      
-    </main>
-    <!-- SECTION: END IMAGE-->
-    <img class="desktop-images" src="images/pages/events/desktop-elephant.jpg" alt="Elephant Statue in a hall">
+  <!-- SECTION: END IMAGE-->
+  <img class="desktop-images" src="images/pages/events/desktop-elephant.jpg" alt="Elephant Statue in a hall">
 <!-- FOOTER: ----------------------------------------------------------------------------->
     <footer>
       <div class="footer-grid-container-socialmedia">
@@ -141,6 +151,8 @@
         <p>&copy; 2019 Community Science Museum - All rights reserved</p>
       </div>
     </footer>
+
+    <script src="js/mobile-menu.js"></script>
 <!-- END: --------------------------------------------------------------------------------->
   </body>
 </html>

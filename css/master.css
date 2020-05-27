@@ -7,7 +7,6 @@
 /* PAGES */
 @import url("main.css");
 @import url("home.css");
-@import url("about.css");
 
 /* FONT */
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Jura|Montserrat&display=swap');
@@ -82,7 +81,7 @@ main img{
   font-weight: 900;
 }
 
-.dark-background{
+.section--dark-background{
   background-color: #0E0E0C;
 }
 
