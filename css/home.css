@@ -63,7 +63,7 @@
 /* MOBILE: -------------------------------------------*/
 @media only screen and (max-width: 480px){
   .header--home{
-    background: url("../images/pages/home/test1.jpg");
+    background: url("../images/pages/home/header--home.jpg");
   }
 
   .header__block{
@@ -96,7 +96,7 @@
 ------------------------------------------------------*/
 @media only screen and (min-width: 481px) and (max-width:1024px){
   .header--home{
-    background: url("../images/pages/home/test1.jpg");
+    background: url("../images/pages/home/header--home.jpg");
   }
   
   .header__block{
@@ -127,7 +127,7 @@
 ------------------------------------------------------*/
 @media only screen and (min-width: 1025px) and (max-width:1600px){
   .header--home{
-    background: url("../images/pages/home/test1.jpg");
+    background: url("../images/pages/home/header--home.jpg");
   }
 
 
@@ -159,7 +159,7 @@
 ------------------------------------------------------*/
 @media only screen and (min-width: 1601px){
   .header--home{
-    background: url("../images/pages/home/test1.jpg");
+    background: url("../images/pages/home/header--home.jpg");
   }
 
   .header__block{
