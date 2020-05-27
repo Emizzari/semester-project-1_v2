@@ -5,6 +5,10 @@
   display: grid;
   align-self: center;
   justify-self: center;
+  background: url("../images/pages/home/header--home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header__block{
@@ -62,10 +66,6 @@
 
 /* MOBILE: -------------------------------------------*/
 @media only screen and (max-width: 480px){
-  .header--home{
-    background: url("../images/pages/home/header--home.jpg");
-  }
-
   .header__block{
     padding: 30px 10px;
   }
@@ -95,10 +95,6 @@
 /* TABLET
 ------------------------------------------------------*/
 @media only screen and (min-width: 481px) and (max-width:1024px){
-  .header--home{
-    background: url("../images/pages/home/header--home.jpg");
-  }
-  
   .header__block{
     padding: 30px 10px;
   }
@@ -126,11 +122,6 @@
 /* LAPTOP
 ------------------------------------------------------*/
 @media only screen and (min-width: 1025px) and (max-width:1600px){
-  .header--home{
-    background: url("../images/pages/home/header--home.jpg");
-  }
-
-
   .header__block{
     padding: 40px 10px;
   }
@@ -158,10 +149,6 @@
 /* DESKTOP
 ------------------------------------------------------*/
 @media only screen and (min-width: 1601px){
-  .header--home{
-    background: url("../images/pages/home/header--home.jpg");
-  }
-
   .header__block{
     padding: 50px 10px;
   }
@@ -180,11 +167,4 @@
     font-size: 45px;
     margin: 0px 0px 20px 0;
   }
-}
-
-
-.header{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
