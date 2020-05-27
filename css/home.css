@@ -1,11 +1,29 @@
-/* COLOUR PALETTE:
-#000000;  -  BLACK
-#0E0E0C;  -  DARK GREY
-#FF003D;  -  RED/PINK
-#FFFFFF;  -  WHITE
-------------------------------------------------------*/
+/* HEADER: ------------------------------------------ */
+.header--home{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+}
 
+.header__block{
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  padding: 40px 20px;
+  background: rgb(253, 253, 253, .8);
+  text-align: center;
+  box-sizing: border-box;
+}
 
+.header__block__h1{
+  color: #000;
+  font-size: 60px;
+  box-sizing: border-box;
+}
+/* END OF HEADER ------------------------------------ */
 
 
 
