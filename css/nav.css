@@ -124,6 +124,8 @@
   .nav__block--menu a{
     display: block;
     transition: .3s;
+    height: 60px;
+    line-height: 60px;
   }
 
   .nav__block--menu a:hover{
