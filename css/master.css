@@ -37,22 +37,9 @@ body{
   background-color: rgb(240, 240, 240);
 }
 
-h1{
-  font-family: 'Julius Sans One', sans-serif;
-  margin: 0;
-  padding: 35px 10px;
-  color: #fff;
-}
-
-h2{
-  font-family: 'Jura', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-p{
+h1, h2, h3, h4, h5, h6,
+p, a, i, 
+span, div, section, article{
   margin: 0;
   padding: 0;
 }
@@ -64,6 +51,7 @@ img{
 main img{
   width: 100%;
 }
+/* -------------------------------------------------- */
 
 
 /* HEADER/HEADLINE: --------------------------------- */
@@ -81,6 +69,15 @@ main img{
   padding: 50px 10px;
 }
 
+h2{
+  font-family: 'Jura', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* -------------------------------------------------- */
+
+
+/* STYLES: ------------------------------------------ */
 .bolder{
   font-weight: 900;
 }
@@ -92,11 +89,10 @@ main img{
 .margin-bottom{
   margin-bottom: 20px;
 }
+/* -------------------------------------------------- */
 
-.red-background{
-  background-color: #FF003D;
-}
 
+/* IMAGES: ------------------------------------------ */
 .mobile-images{
   width: 100%;
 }
@@ -112,16 +108,67 @@ main img{
 .desktop-images{
   width: 100%;
 }
+/* -------------------------------------------------- */
 
-/* MOBILE
-------------------------------------------------------*/
+
+/* BUTTONS: ----------------------------------------- */
+.button{
+  background-color: transparent;
+  border: 1.5px solid #000;
+  color: #000;
+  
+  padding: 20px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  transition: .5s;
+  text-transform: uppercase;
+  margin: 20px 0px 30px 0px;
+  font-weight: 600;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.button:hover{
+  background: #FF003D;
+  color: white;
+  border: 1.5px solid transparent;
+  padding: 20px 50px;
+  cursor: pointer;
+}
+
+.button--pink{
+  background-color: transparent;
+  border: 2px solid #FF003D;
+  color: #FF003D;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  transition: .5s;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.button--pink:hover{
+  background-color: #FF003D;
+  color: #fff;
+}
+/* -------------------------------------------------- */
+
+
+/* LINKS: ------------------------------------------- */
+.link{
+  text-decoration: none;
+}
+/* -------------------------------------------------- */
+
+
+/* MOBILE: -------------------------------------------*/
 @media only screen and (max-width: 480px){
-  h1{
+  .header__h1{
     font-size: 40px;
-  }
-
-  h2{
-    font-size: 30px;
   }
 
   h3{
@@ -131,8 +178,6 @@ main img{
   p{
     font-size: 17px;
   }
-
- 
 
   .tablet-images{
     display: none;
@@ -152,12 +197,6 @@ main img{
 @media only screen and (min-width: 481px) and (max-width:1024px){
   .header__h1{
     font-size: 38px;
-    text-align: center;
-    padding: 28px 10px;
-  }
-
-  h2{
-    font-size: 32px;
   }
 
   p{
@@ -182,12 +221,6 @@ main img{
 @media only screen and (min-width: 1025px) and (max-width:1600px){
   .header__h1{
     font-size: 40px;
-    text-align: center;
-    padding: 30px 10px;
-  }
-
-  h2{
-    font-size: 35px;
   }
 
   p{
@@ -229,73 +262,4 @@ main img{
   .laptop-images{
     display: none;
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.button{
-  background-color: transparent;
-  border: 1.5px solid #000;
-  color: #000;
-  
-  padding: 20px 30px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em;
-  transition: .5s;
-  text-transform: uppercase;
-  margin: 20px 0px 30px 0px;
-  font-weight: 600;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.button:hover{
-  background: #FF003D;
-  color: white;
-  border: 1.5px solid transparent;
-  padding: 20px 50px;
-  cursor: pointer;
-}
-
-.button--pink{
-  background-color: transparent;
-  border: 2px solid #FF003D;
-  color: #FF003D;
-  font-weight: 700;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em;
-  transition: .5s;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.link{
-  text-decoration: none;
-}
-
-
-.button--pink:hover{
-  background-color: #FF003D;
-  color: #fff;
-  
-}
-
-.margin-bottom{
-  margin-bottom: 20px;
 }

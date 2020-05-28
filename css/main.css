@@ -148,6 +148,7 @@
 
   .main__section__h2{
       padding-bottom: 20px;
+      font-size: 24px;
   }
 
   .main__section__h3{
@@ -189,6 +190,7 @@
 
   .main__section__h2{
     padding-bottom: 20px;
+    font-size: 32px;
   }
 
   .main__section__h3{
@@ -235,6 +237,7 @@
 
   .main__section__h2{
     padding-bottom: 20px;
+    font-size: 35px;
   }
 
   .main__section__h3{
@@ -260,58 +263,52 @@
     height: 300px;
   }
 
+  .main__section--opening-hours{
+    grid-area: opening-hours;
+  }
 
-  /* Grid Area */
-.main__section--opening-hours{
-  grid-area: opening-hours;
-}
+  .main__section--tickets{
+      grid-area: tickets;
+  }
 
-.main__section--tickets{
-    grid-area: tickets;
-}
+  .main__section--contact{
+      grid-area: contact;
+  }
 
-.main__section--contact{
-    grid-area: contact;
-}
+  .main__section--location{
+      grid-area: location;
+  }
 
-.main__section--location{
-    grid-area: location;
-}
+  .main__section--food{
+      grid-area: food;
+  }
 
-.main__section--food{
-    grid-area: food;
-}
+  .main__section--shop{
+      grid-area: shop;
+  }
 
-.main__section--shop{
-    grid-area: shop;
-}
+  .main__section--accessibility{
+      grid-area: accessibility;
+  }
 
-.main__section--accessibility{
-    grid-area: accessibility;
-}
+  .main__section--illustration{
+      grid-area: illustration;
+      display: none;
+  }
 
-.main__section--illustration{
-    grid-area: illustration;
-    display: none;
-}
-
-.main--grid--visit-page{
-    grid-template-areas: 
-        'opening-hours tickets contact'
-        'opening-hours tickets location'
-        'food shop accessibility'
-    ;
-}
-
- 
+  .main--grid--visit-page{
+      grid-template-areas: 
+          'opening-hours tickets contact'
+          'opening-hours tickets location'
+          'food shop accessibility'
+      ;
+  }
 
   .main__section--jar-img{
       
       background: url("../images/pages/about/desktop-about.jpg");
       background-position: 40% 50%;
   }
-
-  
 }
 
 /* DESKTOP
@@ -320,9 +317,7 @@
   .main--grid{
     margin: 3rem;
     grid-gap: 3em;
-
     grid-template-columns: 1fr 1fr 1fr;
-
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
@@ -342,10 +337,9 @@
     background-position: 50% 0%;
   }
 
-  
-
   .main__section__h2{
     padding-bottom: 20px;
+    font-size: 30px;
   }
 
    .main__section__h3{
@@ -361,76 +355,57 @@
       padding-bottom: 0px;
   }
 
+  .main__section--opening-hours{
+    grid-area: opening-hours;
+  }
 
+  .main__section--tickets{
+      grid-area: tickets;
+  }
 
-/* Grid Area */
-.main__section--opening-hours{
-  grid-area: opening-hours;
-}
+  .main__section--contact{
+      grid-area: contact;
+  }
 
-.main__section--tickets{
-    grid-area: tickets;
-}
+  .main__section--location{
+      grid-area: location;
+  }
 
-.main__section--contact{
-    grid-area: contact;
-}
+  .main__section--food{
+      grid-area: food;
+  }
 
-.main__section--location{
-    grid-area: location;
-}
+  .main__section--shop{
+      grid-area: shop;
+  }
 
-.main__section--food{
-    grid-area: food;
-}
+  .main__section--accessibility{
+      grid-area: accessibility;
+  }
 
-.main__section--shop{
-    grid-area: shop;
-}
+  .main__section--illustration{
+      grid-area: illustration;
+      display: none;
+  }
 
-.main__section--accessibility{
-    grid-area: accessibility;
-}
-
-.main__section--illustration{
-    grid-area: illustration;
-    display: none;
-}
-
-.main--grid--visit-page{
-    grid-template-areas: 
-        'opening-hours tickets contact'
-        'opening-hours tickets location'
-        'food shop accessibility'
-    ;
-}
-
-
+  .main--grid--visit-page{
+      grid-template-areas: 
+          'opening-hours tickets contact'
+          'opening-hours tickets location'
+          'food shop accessibility'
+      ;
+  }
 
 .iframe--map{
     width: 100%;
     height: 350px;
   }
 
-
-
-
-
-
   .main__section--jar-img{
-     
       background: url("../images/pages/about/desktop-about.jpg");
       background-position: 40% 50%;
   }
- 
-  
-
 }
-
-
-
-
-
 
 .main__section--background-img{
     width: 100%;
