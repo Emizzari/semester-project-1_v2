@@ -113,9 +113,9 @@ h2{
 
 /* BUTTONS: ----------------------------------------- */
 .button{
-  background-color: transparent;
-  border: 1.5px solid #000;
-  color: #000;
+  background-color: rgba(255, 0, 60, 0.8);
+  border: 1.5px solid transparent;
+  color: #FFF;
   
   padding: 20px 30px;
   text-align: center;
