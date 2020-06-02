@@ -1,15 +1,3 @@
-/* IMPORTS
-------------------------------------------------------*/
-/* ESSENTIALS */
-@import url("nav.css");
-@import url("footer.css");
-
-/* PAGES */
-@import url("main.css");
-@import url("home.css");
-
-/* FONT */
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Jura|Montserrat&display=swap');
 
 /* COLOUR PALETTE:
 #000000;  -  BLACK
@@ -20,28 +8,37 @@
 ------------------------------------------------------*/
 
 
-/* DEFAULT STYLES: ---------------------------------- */
-html{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+/* CSS: --------------------------------------------- */
+@import url("main.css");
+@import url("home.css");
+@import url("nav.css");
+@import url("footer.css");
+/* -------------------------------------------------- */
 
-body{
+
+/* FONT: -------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Jura|Montserrat&display=swap');
+/* -------------------------------------------------- */
+
+
+/* DEFAULT STYLES: ---------------------------------- */
+html, body{
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
   background-color: rgb(240, 240, 240);
 }
 
+html, body,
+nav, header, main, footer,
 h1, h2, h3, h4, h5, h6,
-p, a, i, 
+p, a, i, img, button, label,
+ul, li,
 span, div, section, article{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  position: relative;
 }
 
 img{
@@ -50,6 +47,10 @@ img{
 
 main img{
   width: 100%;
+}
+
+a{
+  cursor: pointer;
 }
 /* -------------------------------------------------- */
 
@@ -60,7 +61,7 @@ main img{
   background-color: #2D2D3C;
 }
 
-.header__h1{
+h1{
   font-family: 'Julius Sans One', sans-serif;
   margin: 0;
   color: #fff;
@@ -113,31 +114,54 @@ h2{
 
 /* BUTTONS: ----------------------------------------- */
 .button{
-  background-color: rgba(255, 0, 60, 0.8);
-  border: 1.5px solid transparent;
-  color: #FFF;
-  
-  padding: 20px 30px;
   text-align: center;
   text-decoration: none;
-  font-size: 1em;
   transition: .5s;
   text-transform: uppercase;
-  margin: 20px 0px 30px 0px;
+}
+
+.button--cta--header{
+  background: linear-gradient(150deg, rgb(255, 134, 63), rgb(255, 0, 60), rgb(134, 7, 70));
+  border: 0px solid transparent;
+  padding: 30px 60px;
+  margin-top: 40px;
   font-weight: 600;
-  box-sizing: border-box;
-  position: relative;
+  color: #FFF;
+  letter-spacing: 5px;
+  border-radius: 50px;
+    box-shadow: 5px 5px 15px rgba(128, 4, 35, 0.3);
+
 }
 
-.button:hover{
+.button--cta--header:hover{
+  /* color: #FF003D; */
+  background: linear-gradient(150deg, rgb(63, 255, 207), rgb(0, 153, 255), rgb(7, 41, 134));
+  padding: 30px 90px;
+}
+
+.button--fill--pink{
+  background-color: rgba(255, 0, 60, 1);
+  background: linear-gradient(150deg, rgb(255, 134, 63), rgb(231, 11, 62), rgb(170, 12, 91));
+  box-shadow: 5px 5px 15px rgba(128, 4, 35, 0.3);
+  border: 0px solid rgba(255, 0, 60, 1);
+  color: #FFF;
+  padding: 20px 30px;
+  font-size: 1em;
+  margin: 20px 0px 0px 0px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.button--fill--pink:hover{
   background: #FF003D;
+    background: linear-gradient(150deg, rgb(63, 255, 207), rgb(0, 153, 255), rgb(7, 41, 134));
+
   color: white;
-  border: 1.5px solid transparent;
+  border: 0px solid transparent;
   padding: 20px 50px;
-  cursor: pointer;
 }
 
-.button--pink{
+.button-outline--pink{
   background-color: transparent;
   border: 2px solid #FF003D;
   color: #FF003D;
@@ -151,7 +175,7 @@ h2{
   width: 100%;
 }
 
-.button--pink:hover{
+.button--outline--pink:hover{
   background-color: #FF003D;
   color: #fff;
 }
@@ -190,6 +214,10 @@ h2{
   .desktop-images{
     display: none;
   }
+
+  .button--cta--header{
+    font-size: 1.1em;
+  }
 }
 
 /* TABLET
@@ -213,6 +241,10 @@ h2{
 
   .desktop-images{
     display: none;
+  }
+
+  .button--cta--header{
+    font-size: 1.3em;
   }
 }
 
@@ -261,5 +293,9 @@ h2{
 
   .laptop-images{
     display: none;
+  }
+
+  .button--cta--header{
+    font-size: 1.4em;
   }
 }
