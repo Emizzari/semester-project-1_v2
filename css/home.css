@@ -45,6 +45,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+
+  background: linear-gradient(150deg, rgb(247, 186, 72), rgb(201, 13, 75), rgb(80, 1, 73));
   display: grid;
   position: relative;
   color: #000;
@@ -57,7 +60,7 @@
 
 .section__block--cta{
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   padding: 80px 20px;
 }
 /* END OF CTA --------------------------------------- */
