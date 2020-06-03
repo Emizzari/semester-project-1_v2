@@ -12,9 +12,6 @@
 }
 
 .header__block--home{
-  /* display: grid;
-  align-items: center;
-  justify-items: center; */
   max-width: 700px;
   left:0;
   padding: 200px 20px;
@@ -29,11 +26,11 @@
 }
 
 .header__h1--home{
-  padding-top: 0px;
-  padding-bottom: 30px;
+  padding: 0 0 30px 0;
   color: #000 !important;
   font-size: 60px;
   box-sizing: border-box;
+  line-height: 60px;
 }
 
 .header__block__h1--home:nth-child(2){
@@ -127,7 +124,7 @@
   }
 
   .header__h1--home{
-    font-size: 45px !important;
+    font-size: 42px !important;
   }
 
   .section--cta{
