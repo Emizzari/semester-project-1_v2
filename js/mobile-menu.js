@@ -13,12 +13,15 @@ function mobileMenuToggle(){
 
         line1.style.transform = "rotate(0deg)"
         line1.style.position = "relative"
+        line1.style.top = "0px"
         
 
         line2.style.opacity = "1"
+        line2.style.top = "0px"
 
         line3.style.transform = "rotate(0deg)"
         line3.style.position = "relative"
+        line3.style.top = "0px"
 
     } else {
         menu.style.right = "0px"
@@ -26,12 +29,12 @@ function mobileMenuToggle(){
 
         line1.style.transform = "rotate(45deg)"
         line1.style.position = "absolute"
-        line1.style.top = "0px"
+        line1.style.top = "15px"
 
         line2.style.opacity = "0"
 
         line3.style.transform = "rotate(-45deg)"
         line3.style.position = "absolute"
-        line3.style.top = "0px"
+        line3.style.top = "15px"
     }
 }
