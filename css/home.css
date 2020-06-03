@@ -5,29 +5,39 @@
   display: grid;
   align-self: center;
   justify-self: center;
-  background: url("../images/pages/home/header--home.jpg");
+  background: url("../images/pages/home/header--home-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 70% 70%;
 }
 
 .header__block--home{
-  display: grid;
-  align-self: center;
-  justify-self: center;
-  width: 100%;
-  padding: 80px 20px;
-  background: rgb(253, 253, 253, .9);
+  /* display: grid;
+  align-items: center;
+  justify-items: center; */
+  max-width: 700px;
+  left:0;
+  padding: 200px 20px;
+  background: rgb(253, 253, 253, .8);
   text-align: center;
   box-sizing: border-box;
+  transition: 1s;
+}
+
+.header__block--home:hover{
+  max-width: 800px;
 }
 
 .header__h1--home{
-  padding: 0;
-
+  padding-top: 0px;
+  padding-bottom: 30px;
   color: #000 !important;
   font-size: 60px;
   box-sizing: border-box;
+}
+
+.header__block__h1--home:nth-child(2){
+  padding: 0;
 }
 
 .header__h2--home{
@@ -41,19 +51,13 @@
 
 /* CTA: --------------------------------------------- */
 .section--cta{
-  background: url("../images/test2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-
   background: linear-gradient(150deg, rgb(247, 186, 72), rgb(201, 13, 75), rgb(80, 1, 73));
   display: grid;
   position: relative;
   color: #000;
-  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   padding: 100px 0;
 }
+
 .section__block__h2--cta{
   color: #FFF;
 }
@@ -62,6 +66,7 @@
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   background: rgba(0, 0, 0, 0.5);
   padding: 80px 20px;
+  width: 100%;
 }
 /* END OF CTA --------------------------------------- */
 
@@ -154,7 +159,11 @@
   }
 
   .header__h1--home{
-    font-size: 55px !important;
+    font-size: 42px !important;
+  }
+
+  .header__h2--home{
+    font-size: 30px;
   }
 
   .section--cta{
@@ -186,7 +195,11 @@
   }
 
   .header__h1--home{
-    font-size: 65px !important;
+    font-size: 42px !important;
+  }
+
+  .header__h2--home{
+    font-size: 30px;
   }
 
   .section--cta{
